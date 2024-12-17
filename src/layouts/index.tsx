@@ -3,11 +3,15 @@ import { Outlet } from 'react-router';
 
 import Loading from '@/components/Loading';
 
+import { LayoutContainer } from './style';
+
 const Layout = () => {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <Outlet />
+        <LayoutContainer vertical>
+          <Outlet />
+        </LayoutContainer>
       </Suspense>
     </>
   );

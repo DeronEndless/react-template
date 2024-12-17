@@ -11,6 +11,7 @@ function App() {
       <ConfigProvider
         locale={zhCN}
         theme={{
+          cssVar: true,
           hashed: false,
           token: {
             colorPrimary: '#00b96b',
