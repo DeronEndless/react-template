@@ -14,7 +14,11 @@ function App() {
           cssVar: true,
           hashed: false,
           token: {
+            // Seed Token
             colorPrimary: '#00b96b',
+
+            // Map Token
+            // colorBorder: '#d9d9d9',
           },
         }}
       >
