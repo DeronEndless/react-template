@@ -1,6 +1,6 @@
 import { RouterProvider } from 'react-router';
 
-import { ConfigProvider } from 'antd';
+import { App as AntdApp, ConfigProvider } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 
 import router from '@/routes';
@@ -22,7 +22,9 @@ function App() {
           },
         }}
       >
-        <RouterProvider router={router} />
+        <AntdApp>
+          <RouterProvider router={router} />
+        </AntdApp>
       </ConfigProvider>
     </>
   );
